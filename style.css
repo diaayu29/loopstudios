@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 1400px;
+}
+
+nav {
+    padding: 15px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav .navbar-collapse a {
+    font-size: 16px;
+    color: #fff;
+}
+
+.link, .link2 {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header p {
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    margin: 380px 20px;
+    font-size: 50px;
+    padding: 20px;
+    letter-spacing: 8px;
+}
+
+.img-bg {
+    background-image: url(images/mobile/image-hero.jpg);
+    background-size: cover;
+}
+
+.space {
+    padding-bottom: 17px;
+}
+
+.promotion {
+    margin: 20px;
+}
+
+.teks h2 {
+    margin-top: 20px;
+    margin-bottom: -30px;
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.teks p {
+    line-height: 20px;
+    padding: 45px;
+    font-size: 11px;
+    text-align: center;
+    color: rgb(126, 126, 126);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.our-creations {
+    margin-bottom: 180px;
+}
+
+.our-creations .header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-creations .header h2 {
+    font-weight: 100;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.our-creations .header button {
+    display: none;
+    padding: 1px 35px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.3s;
+    border: 1px solid #000;
+}
+
+.our-creations .header button:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.our-creations .image-creations-desktop {
+    display: none;
+}
+
+.our-creations .image-creations-mobile {
+    display: block;
+}
+
+.our-creations .image-creations-mobile .sub-image {
+    margin: 20px;
+}
+
+.our-creations .image-creations-desktop .sub-image::after,
+.our-creations .image-creations-mobile .sub-image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.our-creations .image-creations-desktop .sub-image,
+.our-creations .image-creations-mobile .sub-image {
+    position: relative;
+}
+
+.our-creations .image-creations-desktop .sub-image p,
+.our-creations .image-creations-mobile .sub-image p {
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 35px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 20px;
+    font-weight: 100;
+    padding: 50px 40px 10px 40px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+footer {
+    display: block;
+    justify-content: space-between;
+    padding: 10px 110px;
+    background-color: #000;
+}
+
+footer .link-navigation {
+    font-size: 16px;
+}
+
+footer .logo-link h2 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer .link-navigation a {
+    text-align: center;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.1s;
+}
+
+footer .link-navigation a:hover {
+    color: #fff;
+}
+
+footer .sosmed .sosmed-logo {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+footer .sosmed .sosmed-logo a {
+    color: #fff;
+    margin-top: 35px;
+    margin-left: 12px;
+}
+
+footer .copyright {
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+}
+
+@media (min-width: 776px) {
+    nav {
+        padding: 60px 150px;
+    }
+    .navbar-brand {
+        font-size: 30px;
+    }
+    nav .navbar-collapse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    nav .navbar-collapse a {
+        justify-content: space-around;
+    }
+    nav .navbar-collapse .link:hover {
+        transition: all 0.2s;
+        color: #fff;
+    }
+    nav .navbar-collapse .link.active,
+    .logo-link .link-navigation .link2.active {
+        color: rgb(255, 255, 255);
+    }
+    nav .navbar-collapse .link.active::after,
+    .logo-link .link-navigation .link2.active::after {
+        content: '';
+        display: block;
+        border-bottom:  3px solid #fff;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    nav .navbar-collapse .link:hover::after,
+    .logo-link .link-navigation .link2:hover::after {
+        content: '';
+        display: block;
+        border-bottom:  3px solid #fff;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .hide-nav {
+        display: none;
+    }
+    .show-nav {
+        display: none;
+    }
+    .header p {
+        font-size: 60px;
+        font-weight: 100;
+        margin: 150px 450px 60px 160px;
+        border: 3px solid #fff;
+        padding: 40px 0 40px 45px;
+        letter-spacing: 5px;
+        line-height: 65px;
+    }
+    .img-bg {
+        background-image: url(images/desktop/image-hero.jpg);
+        background-size: cover;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .promotion {
+        position: relative;
+        margin: 150px 130px;
+    }
+    .teks {
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        margin-top: -320px;
+        margin-left: 570px;
+        padding: 100px;
+        padding-right: 0;
+    }
+    .teks h2 {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .teks p {
+        padding: 0;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .our-creations .header {
+        padding: 5px 150px;
+    }
+    .our-creations .header button {
+        display: block;
+    }
+    .our-creations .image-creations-desktop {
+        display: block;
+        margin: 20px 100px;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 90px;
+    }
+    .our-creations .image-creations-mobile {
+        display: none;
+    }
+    .our-creations .image-creations-desktop .sub-image {
+        margin-top: 20px;
+        transition: all 0.2s;
+    }
+    .our-creations .image-creations-desktop .sub-image:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all 0.2s;
+    }
+    .our-creations .image-creations-desktop .sub-image::after {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    }
+    .our-creations .image-creations-desktop .sub-image p {
+        top: 320px;
+        letter-spacing: 2px;
+        line-height: 53px;
+        padding: 350px 50px 35px 20px;
+        margin: -350px 0 0 0;
+        transition: all 0.2s;
+    }
+    .our-creations .image-creations-desktop .sub-image p:hover {
+        z-index: 3;
+        color: rgb(0, 0, 0);
+        transition: all 0.2s;
+    }
+    footer {
+        display: flex;
+    }
+    footer .logo-link h2 {
+        text-align: left;
+    }
+    footer .link-navigation {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer .link-navigation a {
+        text-align: left;
+    }
+    
+    footer .sosmed .sosmed-logo {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+    }
+    footer .sosmed .sosmed-logo a {
+        margin-left: 25px;
+        transition: all 0.2s;
+    }
+    footer .sosmed .sosmed-logo a:hover {
+        border-bottom: 3px solid #fff;
+        margin-top: 30px;
+        transition: all 0.2s;
+    }
+
+    footer .copyright {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 776px) {
+    body.disabledscroll {
+        overflow: hidden;
+    }
+    .show-nav .fa-bars {
+        color: #fff;
+        font-size: 30px;
+        padding-left: 250px;
+    }
+    .show-nav .fa-bars:hover {
+        cursor: pointer;
+    }
+    nav .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #000;
+        display: none;
+        padding-top: 100px;
+        padding-left: 30px;
+    }
+    nav .navbar-nav.active {
+        display: block;
+    }
+    nav .navbar-nav .hide-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .navbar-nav .hide-nav a {
+        text-transform: lowercase;
+    }
+    nav .navbar-nav .hide-nav .fas {
+        color: #fff;
+        font-size: 30px;
+        padding-right: 35px;
+        margin-top: -80px;
+    }
+    nav .navbar-nav .hide-nav .fas:hover {
+        cursor: pointer;
+    }
+    nav .navbar-nav .navbar-brand {
+        display: block;
+        margin-top: -80px;
+        padding-bottom: 50px;
+    }
+    nav .navbar-nav a {
+        font-size: 28px;
+    }
+    nav .navbar-nav a:hover {
+        color: #fff;
+    }
+    .our-creations .header button {
+        display: block;
+        position: relative;
+        top: 1600px;
+        left: -35%;
+        padding: 0 35px;
+    }
+}
